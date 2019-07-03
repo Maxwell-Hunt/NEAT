@@ -20,7 +20,7 @@ class Player:
         self.brain.fitness *= self.brain.fitness
         self.brain.fitness *= 10
             
-pop = Population(Player,150,fitnessGoal=12,initiallyConnected=True)
+pop = Population(Player,150,fitnessGoal=120,initiallyConnected=True)
 
 def go():
     pop.run()
