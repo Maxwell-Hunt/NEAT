@@ -20,7 +20,7 @@ class Player:
         self.brain.fitness *= self.brain.fitness
         self.brain.fitness *= 10
             
-pop = Population(Player,150,fitnessGoal=120,initiallyConnected=True)
+pop = Population(Player,150,fitnessGoal=120,initiallyConnected=True,stepSize=0.8)
 
 def go():
     pop.run()
@@ -31,7 +31,7 @@ def go():
     print(pop.avgFit)    
     pop.evaluate()
 
-for i in range(100):
+while pop.solution == None:
     go()
 
 pop.plot()
