@@ -2,7 +2,7 @@ from Population import Population
 from Network import Network
 from math import floor
 
-
+#################################
 
 class Player:
     def __init__(self,brain=None):
